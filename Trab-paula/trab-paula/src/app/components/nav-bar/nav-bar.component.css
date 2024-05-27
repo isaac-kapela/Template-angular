@@ -1,18 +1,20 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
   }
   
-header{
+  .header {
     background-color: rgb(7, 92, 92);
-    padding: 2% ;
+    padding: 2%;
     display: flex;
     justify-content: space-between;
     z-index: 1;
+    width: 100%;
     border-radius: 5px;
-}
+    margin-bottom: 5px ;
+  }
   
   .logo {
     font-size: 2.5rem;
@@ -22,8 +24,8 @@ header{
   }
   
   @media only screen and (max-width: 768px) {
-    .logo{
-    font-size: 2rem;
+    .logo {
+      font-size: 1.5rem;
     }
   }
   
@@ -32,25 +34,28 @@ header{
     justify-content: flex-end;
   }
   
-  
   @media only screen and (max-width: 768px) {
-    .navBar{
-    position: fixed;
-    top: 4rem;
-    right: 0;
-    width: 100%;
-    height: calc(35vh - 2rem);
-    background: #111424;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    transition: max-height 0.3s ease-out;
-    max-height: 0;
-    overflow: hidden;
-    border-radius: 5px;
-    margin-top: 3rem;
+    .navBar {
+      position: fixed;
+      top: 4rem;
+      right: 0;
+      width: 100%;
+      background-color: rgb(7, 92, 92);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      transition: max-height 0.3s ease-out;
+      max-height: 0;
+      overflow: hidden;
+      border-radius: 5px;
+     
+    }
   }
-}
+  
+  .navBar.open {
+    max-height: 1000px;
+    
+  }
   
   .navBar ul {
     list-style: none;
@@ -60,25 +65,23 @@ header{
   }
   
   @media only screen and (max-width: 768px) {
-    .navBar ul{
-    flex-direction: column;
-    align-items: flex-end;
-    width: 100%;
-    height: 100%;
-    display: none;
-    text-align: center;
-    border: 2px solid #f1c40f;
+    .navBar ul {
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+        text-align: center;
+        border: 2px solid #f1c40f;
+      }
   }
-}
   
   .navBar ul li {
     margin-left: 2rem;
   }
   
   @media only screen and (max-width: 768px) {
-    .navBar ul li{
-    width: 100%;
-    margin: 1rem 0;
+    .navBar ul li {
+      width: 100%;
+      margin: 1rem 0;
     }
   }
   
@@ -90,9 +93,8 @@ header{
   }
   
   @media only screen and (max-width: 768px) {
-    .navBar a{
-        font-size: 1.25rem;
-
+    .navBar a {
+      font-size: 1.25rem;
     }
   }
   
@@ -106,11 +108,19 @@ header{
     color: wheat;
     cursor: pointer;
     display: none;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+  }
+  
+  .menu-icon img {
+    width: 24px;
+    height: 24px;
   }
   
   @media only screen and (max-width: 768px) {
-   .menu-icon{
-    display: block;
-   } 
+    .menu-icon {
+      display: block;
+    }
   }
   

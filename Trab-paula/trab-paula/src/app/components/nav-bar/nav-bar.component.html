@@ -1,18 +1,17 @@
 <div [ngClass]="{'menu-open': menuOpen}">
-    <header class="header">
-      <a href="/" class="logo">Resort de paula</a>
-      
-      <button class="menu-icon" (click)="toggleMenu()">
-        <i class="material-icons">menu</i>
-      </button>
-      <nav [ngClass]="{'navBar': true, 'open': menuOpen}">
-        <ul>
-          <li><a routerLink="/" routerLinkActive="ativa">Home</a></li>
-          <li><a routerLink="/Sobre" routerLinkActive="ativa">Sobre</a></li>
-          <li><a routerLink="/Servicos" routerLinkActive="ativa">Serviços</a></li>
-          <li><a routerLink="/Contato" routerLinkActive="ativa">Contato</a></li>
-        </ul>
-      </nav>
-    </header>
-  </div>
-  
+  <header class="header">
+    <a href="/" class="logo">Resort de Paula</a>
+    
+    <button class="menu-icon" (click)="toggleMenu()">
+      <img width="24" height="24" src="https://img.icons8.com/material-outlined/24/menu--v1.png" alt="menu--v1"/>
+    </button>
+    <nav [ngClass]="{'navBar': true, 'open': menuOpen}">
+      <ul>
+        <li><a routerLink="/" routerLinkActive="ativa">Home</a></li>
+        <li><a routerLink="/Sobre" routerLinkActive="ativa">Sobre</a></li>
+        <li><a routerLink="/Servicos" routerLinkActive="ativa">Serviços</a></li>
+        <li><a routerLink="/Contato" routerLinkActive="ativa">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
